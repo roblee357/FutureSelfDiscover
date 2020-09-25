@@ -1,0 +1,79 @@
+<script> var jobs_json = {}; </script>
+
+<h2>Job Search</h2>
+
+<p><label for="jname">Job name:</label><br />
+    <input id="jname" name="lname" type="text" value="developer" /><br />
+    <label for="lname">Location:</label><br />
+    <input id="lname" name="lname" type="text" value="29651" /><br />
+    <br />
+    <label for="distName">Distance:</label><br />
+    <input id="distName" name="distName" type="text" value="25" /><br />
+    <br />
+    <script>
+
+        function loadDoc(jobName ,location ) {
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 ) {
+                    jobs_json = JSON.parse(this.responseText);
+                    document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs[1].JobTitle,null,'\t');
+                }
+            };
+            jobName = document.getElementById("jname").value;
+            location = document.getElementById("lname").value;
+            distance = document.getElementById("distName").value;
+            jobName = encodeURIComponent(jobName.trim());
+            location = encodeURIComponent(location.trim());
+            distance = encodeURIComponent(distance.trim());
+            xhttp.open("GET", "https://api.careeronestop.org/v1/jobsearch/bSzANWeySBZwyEB/" + jobName + "/" + location + "/" + distance + "/jobtitle/ASC/1/10/20", true);
+            xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
+            xhttp.send();
+            return jobs_json;
+        }
+        function tableCreate() {
+            var body = document.getElementsByTagName('body')[0];
+            var tbl = document.createElement('table');
+            tbl.style.width = '100%';
+            tbl.setAttribute('border', '1');
+            var tbdy = document.createElement('tbody');
+            for (var i = 0; i < 3; i++) {
+                var tr = document.createElement('tr');
+                for (var j = 0; j < 2; j++) {
+                    if (i == 2 && j == 1) {
+                        break
+                    } else {
+                        var td = document.createElement('td');
+                        td.appendChild(document.createTextNode(j * i))
+                        i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
+                        tr.appendChild(td)
+                    }
+                }
+                tbdy.appendChild(tr);
+            }
+            tbl.appendChild(tbdy);
+            body.appendChild(tbl)
+        }
+        tableCreate();
+    </script>
+
+    <button onclick="loadDoc()" type="button">Request data</button></p>
+
+<table style="width:100%">
+    <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>URL</th>
+    </tr>
+    <script language="javascript" type="text/javascript">
+        for (var a=0; a < 11; a++) {
+            document.write("<td>" + jobs_json.Jobs[a].JobTitle +"</td>");
+            document.write("<td>" + jobs_json.Jobs[a].Company +"</td>");
+            document.write("<td>" + jobs_json.Jobs[a].URL +"</td>");
+        }
+    </script>
+
+
+</table>
+<p id="demo">&nbsp;</p>

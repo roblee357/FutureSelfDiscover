@@ -1,0 +1,29 @@
+Thank you for your interest in our Web API.
+
+Per our agreement, any Web API services you launch on your site need to be available to the public, at no cost
+and with no log-in requirements.
+
+Web API consumption instructions and our API testing tool for each service can be found by going to:
+https://eur05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.careeronestop.org%2FDevelopers%2FWebAPI%2Ftechnical-information.aspx&amp;data=02%7C01%7C%7C369558e53b8a4f808d5908d85a832acb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637358866702347592&amp;sdata=TzOXjWX%2BF5f23IHfjkYN%2FlL3rSnAQoFITRPvEvMvSAQ%3D&amp;reserved=0
+
+Our logo is also provided which must be displayed on all pages containing our Web API tools.
+
+Your unique user ID:
+
+bSzANWeySBZwyEB
+
+Your Token key: hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==
+
+Your agreement will expire three years from today on 9/16/2023 and all Web API services will be discontinued,
+unless you renew.
+
+If you have any questions, please don't hesitate to contact us.
+
+
+Kelly Tenner
+Outreach Manager
+https://eur05.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.careeronestop.org%2F&amp;data=02%7C01%7C%7C369558e53b8a4f808d5908d85a832acb%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C637358866702357587&amp;sdata=blsSBAK1E7KOeaDKnnxfTWOOOpYYSSrBSRwJ%2FcLig3Y%3D&amp;reserved=0
+332 Minnesota St Suite E200
+St Paul, MN 55101
+651-539-5681
+kelly.tenner@state.mn.us
