@@ -32,7 +32,7 @@ function fetch_jobs(jobName ,location ) {
         var th3 = document.createElement('td');
         th1.appendChild(document.createTextNode("Job Title"))
         th2.appendChild(document.createTextNode("Company"))
-        th3.appendChild(document.createTextNode("Application!"))
+        th3.appendChild(document.createTextNode("Application"))
         tr.appendChild(th1)
         tr.appendChild(th2)
         tr.appendChild(th3)
