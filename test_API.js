@@ -37,7 +37,7 @@ function fetch_jobs(jobName ,location ) {
         th3.appendChild(document.createTextNode("Location"))
         tr.appendChild(th3)
         var th4 = document.createElement('td');
-        th4.appendChild(document.createTextNode("LocationName"))
+        th4.appendChild(document.createTextNode("LocationCount"))
         tr.appendChild(th4)
         tbdy.appendChild(tr);
       } else {
@@ -55,7 +55,7 @@ function fetch_jobs(jobName ,location ) {
          th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
          tr.appendChild(th3)
          var th4 = document.createElement('td');
-         th4.appendChild(document.createTextNode(jobs_json.Jobs[i].LocationName));
+         th4.appendChild(document.createTextNode(jobs_json.Jobs[i].LocationCount));
          tr.appendChild(th4)
          tbdy.appendChild(tr);
      }
