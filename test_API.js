@@ -41,8 +41,9 @@ function fetch_jobs(jobName ,location ) {
        var th1 = document.createElement('td');
        var th2 = document.createElement('td');
        var th3 = document.createElement('td');
-       th1.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
        th1.href = jobs_json.Jobs[i].URL;
+       th1.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
+
        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
        var a = document.createElement('a');
        a.href = jobs_json.Jobs[i].URL;
