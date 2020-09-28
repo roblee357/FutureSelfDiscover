@@ -36,32 +36,38 @@ function fetch_jobs(jobName ,location ) {
         var th3 = document.createElement('td');
         th3.appendChild(document.createTextNode("Location"))
         tr.appendChild(th3)
+        var th4 = document.createElement('td');
+        th4.appendChild(document.createTextNode("LocationName"))
+        tr.appendChild(th4)
         tbdy.appendChild(tr);
       } else {
-       var th1 = document.createElement('td');
-       var a = document.createElement('a');
-       a.href = jobs_json.Jobs[i].URL;
-       a.title = jobs_json.Jobs[i].JobTitle;
-       a.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
-       th1.appendChild(a);
-       tr.appendChild(th1)
-       var th2 = document.createElement('td');
-        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
-        tr.appendChild(th2)
-        var th3 = document.createElement('td');
-        th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
-        tr.appendChild(th3)
-        tbdy.appendChild(tr);
-         }
-       }
-       tbl.appendChild(tbdy);
-       table_insert.appendChild(tbl)
+         var th1 = document.createElement('td');
+         var a = document.createElement('a');
+         a.href = jobs_json.Jobs[i].URL;
+         a.title = jobs_json.Jobs[i].JobTitle;
+         a.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
+         th1.appendChild(a);
+         tr.appendChild(th1)
+         var th2 = document.createElement('td');
+         th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
+         tr.appendChild(th2)
+         var th3 = document.createElement('td');
+         th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
+         tr.appendChild(th3)
+         var th4 = document.createElement('td');
+         th4.appendChild(document.createTextNode(jobs_json.Jobs[i].LocationName));
+         tr.appendChild(th4)
+         tbdy.appendChild(tr);
      }
-     document.addEventListener('DOMContentLoaded', (event) => {
-      document.getElementById('fetch_button').disabled = true;
-    }, false);
+   }
+   tbl.appendChild(tbdy);
+   table_insert.appendChild(tbl)
+ }
+ document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('fetch_button').disabled = true;
+}, false);
 
-function openInNewTab(url) {
+ function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
 }
