@@ -32,7 +32,7 @@ function fetch_jobs(jobName ,location ) {
         var th3 = document.createElement('td');
         th1.appendChild(document.createTextNode("Job Title"))
         th2.appendChild(document.createTextNode("Company"))
-        th3.appendChild(document.createTextNode("Details & Apply"))
+        th3.appendChild(document.createTextNode("Location"))
         tr.appendChild(th1)
         tr.appendChild(th2)
         tr.appendChild(th3)
@@ -47,12 +47,7 @@ function fetch_jobs(jobName ,location ) {
        a.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
        th1.appendChild(a);
        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
-       var b = document.createElement('b');
-       b.href = jobs_json.Jobs[i].URL;
-       b.title = jobs_json.Jobs[i].URL;
-       b.appendChild(document.createTextNode("Link"));
-  //th3.appendChild(document.createTextNode("Website: "));
-       th3.appendChild(b);
+       th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Company));
   //th3.appendChild(document.createTextNode("."));
            //th3.appendChild(job_link)
            tr.appendChild(th1)
