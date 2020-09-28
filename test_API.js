@@ -28,29 +28,33 @@ function fetch_jobs(jobName ,location ) {
       var tr = document.createElement('tr');
       if (i == 0 ) {
         var th1 = document.createElement('td');
+        th1.appendChild(document.createTextNode("Job Title"))
+        tr.appendChild(th1)
         var th2 = document.createElement('td');
         var th3 = document.createElement('td');
-        th1.appendChild(document.createTextNode("Job Title"))
+        
         th2.appendChild(document.createTextNode("Company"))
         th3.appendChild(document.createTextNode("Location"))
-        tr.appendChild(th1)
+        
         tr.appendChild(th2)
         tr.appendChild(th3)
         tbdy.appendChild(tr);
       } else {
        var th1 = document.createElement('td');
-       var th2 = document.createElement('td');
-       var th3 = document.createElement('td');
        var a = document.createElement('a');
        a.href = jobs_json.Jobs[i].URL;
        a.title = jobs_json.Jobs[i].JobTitle;
        a.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
        th1.appendChild(a);
+       tr.appendChild(th1)
+       var th2 = document.createElement('td');
+       var th3 = document.createElement('td');
+
        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
        th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
   //th3.appendChild(document.createTextNode("."));
            //th3.appendChild(job_link)
-           tr.appendChild(th1)
+           
            tr.appendChild(th2)
            tr.appendChild(th3)
            tbdy.appendChild(tr);
