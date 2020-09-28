@@ -32,7 +32,7 @@ function fetch_jobs(jobName ,location ) {
         var th3 = document.createElement('td');
         th1.appendChild(document.createTextNode("Job Title"))
         th2.appendChild(document.createTextNode("Company"))
-        th3.appendChild(document.createTextNode("Application"))
+        th3.appendChild(document.createTextNode("Detail & Apply"))
         tr.appendChild(th1)
         tr.appendChild(th2)
         tr.appendChild(th3)
@@ -46,7 +46,7 @@ function fetch_jobs(jobName ,location ) {
        var a = document.createElement('a');
        a.href = jobs_json.Jobs[i].URL;
        a.title = jobs_json.Jobs[i].URL;
-       a.appendChild(document.createTextNode("Apply"));
+       a.appendChild(document.createTextNode("Link"));
   //th3.appendChild(document.createTextNode("Website: "));
   th3.appendChild(a);
   //th3.appendChild(document.createTextNode("."));
