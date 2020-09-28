@@ -31,12 +31,10 @@ function fetch_jobs(jobName ,location ) {
         th1.appendChild(document.createTextNode("Job Title"))
         tr.appendChild(th1)
         var th2 = document.createElement('td');
-        var th3 = document.createElement('td');
-        
         th2.appendChild(document.createTextNode("Company"))
-        th3.appendChild(document.createTextNode("Location"))
-        
         tr.appendChild(th2)
+        var th3 = document.createElement('td');
+        th3.appendChild(document.createTextNode("Location"))
         tr.appendChild(th3)
         tbdy.appendChild(tr);
       } else {
@@ -48,16 +46,12 @@ function fetch_jobs(jobName ,location ) {
        th1.appendChild(a);
        tr.appendChild(th1)
        var th2 = document.createElement('td');
-       var th3 = document.createElement('td');
-
-       th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
-       th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
-  //th3.appendChild(document.createTextNode("."));
-           //th3.appendChild(job_link)
-           
-           tr.appendChild(th2)
-           tr.appendChild(th3)
-           tbdy.appendChild(tr);
+        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
+        tr.appendChild(th2)
+        var th3 = document.createElement('td');
+        th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
+        tr.appendChild(th3)
+        tbdy.appendChild(tr);
          }
        }
        tbl.appendChild(tbdy);
