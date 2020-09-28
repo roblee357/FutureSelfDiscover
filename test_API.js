@@ -47,7 +47,7 @@ function fetch_jobs(jobName ,location ) {
        a.appendChild(document.createTextNode(jobs_json.Jobs[i].JobTitle))
        th1.appendChild(a);
        th2.appendChild(document.createTextNode(jobs_json.Jobs[i].Company))
-       th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Company));
+       th3.appendChild(document.createTextNode(jobs_json.Jobs[i].Location));
   //th3.appendChild(document.createTextNode("."));
            //th3.appendChild(job_link)
            tr.appendChild(th1)
