@@ -19,7 +19,7 @@ function fetch_jobs(jobName ,location ) {
      //return jobs_json;
    }
    function tableCreate(jobs_json) {
-    var table_insert = document.getElementsByID('table_insert')[0];
+    var table_insert = document.getElementByID('table_insert')[0];
     var tbl = document.createElement('table');
     tbl.style.width = '100%';
     tbl.setAttribute('border', '1');
