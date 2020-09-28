@@ -19,7 +19,7 @@ function fetch_jobs(jobName ,location ) {
      //return jobs_json;
    }
    function tableCreate(jobs_json) {
-    var body = document.getElementsByTagName('body')[0];
+    var table_insert = document.getElementsByID('table_insert')[0];
     var tbl = document.createElement('table');
     tbl.style.width = '100%';
     tbl.setAttribute('border', '1');
@@ -32,7 +32,7 @@ function fetch_jobs(jobName ,location ) {
         var th3 = document.createElement('td');
         th1.appendChild(document.createTextNode("Job Title"))
         th2.appendChild(document.createTextNode("Company"))
-        th3.appendChild(document.createTextNode("Detail & Apply"))
+        th3.appendChild(document.createTextNode("Details & Apply"))
         tr.appendChild(th1)
         tr.appendChild(th2)
         tr.appendChild(th3)
@@ -58,7 +58,7 @@ function fetch_jobs(jobName ,location ) {
          }
        }
        tbl.appendChild(tbdy);
-       body.appendChild(tbl)
+       table_insert.appendChild(tbl)
      }
      document.addEventListener('DOMContentLoaded', (event) => {
       document.getElementById('fetch_button').disabled = true;
