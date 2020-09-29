@@ -83,7 +83,7 @@ function fast_growing_job_report(jobName ,location ) {
         }
      };
      report_type = document.getElementById("report_type").value;
-     report_type = encodeURIComponent(jobName.trim());
+     report_type = encodeURIComponent(report_type.trim());
      xhttp.open("GET", "https://api.careeronestop.org/v1/occupationsreports/bSzANWeySBZwyEB/" + report_type + "/US/0/0/0/0/10", true);
      xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
      xhttp.send();     
