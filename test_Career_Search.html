@@ -1,14 +1,15 @@
-<h2>Job Search</h2>
+<h2>Occupation Report</h2>
 
-<p><label for="jname">Job name:</label><br />
-<input id="jname" name="lname" type="text" value="developer" /><br />
-<label for="lname">Location:</label><br />
-<input id="lname" name="lname" type="text" value="29651" /><br />
+<p><label for="report_type">Type of report to generate.<br>
+"FG" is Fastest-Growing Careers<br>
+"HP" is Highest Paying Careers<br>
+"MO" is Most Openings<br>
+"LE" is Careers with Largest Employment<br>
+"DE" is Careers with Declining Employment </label><br />
+<input id="report_type" name="report_type" type="text" value="FG" /><br />
+
 <br />
-<label for="distName">Distance:</label><br />
-<input id="distName" name="distName" type="text" value="25" /><br />
-<br />
-<button name="fetch_button" onclick="fetch_jobs()" type="button">Search</button></p>
+<button name="fetch_button" onclick="fast_growing_job_report()" type="button">Search</button></p>
 <script>
   var script   = document.createElement('script');
   script.type  = 'text/javascript';
@@ -17,4 +18,4 @@
   document.body.appendChild(script);
 </script>
 
-<p id="table_insert">&nbsp;</p>
+<textarea id="table_insert">&nbsp;</textarea>
