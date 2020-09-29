@@ -71,3 +71,20 @@ function fetch_jobs(jobName ,location ) {
   var win = window.open(url, '_blank');
   win.focus();
 }
+
+
+function fast_growing_job_report(jobName ,location ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 ) {
+      jobs_json = JSON.parse(this.responseText);
+      var table_insert = document.getElementById('table_insert');
+      table_insert.appendChild(jobs_json)
+        }
+     };
+
+     xhttp.open("GET", "https://api.careeronestop.org/v1/occupationsreports/bSzANWeySBZwyEB/FG/US/0/0/0/0/10", true);
+     xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
+     xhttp.send();     
+     //return jobs_json;
+   }
