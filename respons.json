@@ -1,132 +1,64 @@
 {
-    "CurrentCertificates": 1,
-    "CurrentEducationTitle": "Bachelor's degree",
-    "CurrentExperienceTitle": "None",
-    "CurrentLicenses": 0,
-    "CurrentOccupationCode": "41303103",
-    "CurrentOccupationTitle": "Securities and Commodities Traders",
-    "CurrentOccupationWage": "$62,100",
-    "CurrentTrainingTitle": "Moderate-term on-the-job training",
-    "LocationState": "",
-    "OccupationSkillsGapList": null,
-    "OccupationSkillsMatchList": [
+    "Companies": null,
+    "Jobcount": "510",
+    "Jobs": [
         {
-            "Description": "Keeping track of how well people and/or groups are doing in order to make improvements.",
-            "SkillId": "2.A.2.d",
-            "Title": "Monitoring"
+            "AccquisitionDate": "2020-9-26 5:20 AM",
+            "Company": "Kforce",
+            "Fc": "False",
+            "JobTitle": ".NET Architect - Azure PaaS",
+            "JvId": "6CE92519098E47DCAD7462F8CC373C3E206",
+            "Location": "Hermitage, Tennessee",
+            "URL": "https://de.jobsyn.org/6CE92519098E47DCAD7462F8CC373C3E206"
         },
         {
-            "Description": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
-            "SkillId": "2.C.1.d",
-            "Title": "Sales and Marketing"
+            "AccquisitionDate": "2020-9-26 4:38 AM",
+            "Company": "Fiserv",
+            "Fc": "True",
+            "JobTitle": "100% Commission - Senior Adviser - Direct Sales",
+            "JvId": "CC7A11B32D144BCC806F9048FEC6CD33206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/CC7A11B32D144BCC806F9048FEC6CD33206"
         },
         {
-            "Description": "Reading work-related information.",
-            "SkillId": "2.A.1.a",
-            "Title": "Reading Comprehension"
+            "AccquisitionDate": "2020-9-24 10:58 PM",
+            "Company": "Mars",
+            "Fc": "False",
+            "JobTitle": "2021 Mars Inc. Internship - Supply Chain and Procurement (Nashville or St. Louis) 1",
+            "JvId": "3C4774BFB9024B9BB8D5714DF21EB3F7206",
+            "Location": "Franklin, Tennessee",
+            "URL": "https://de.jobsyn.org/3C4774BFB9024B9BB8D5714DF21EB3F7206"
         },
         {
-            "Description": "Knowledge of economic and accounting principles and practices, the financial markets, banking and the analysis and reporting of financial data.",
-            "SkillId": "2.C.1.c",
-            "Title": "Economics and Accounting"
+            "AccquisitionDate": "2020-9-25 11:06 AM",
+            "Company": "Vanderbilt University",
+            "Fc": "True",
+            "JobTitle": "Administrative Specialist, Sociology and Religious Studies",
+            "JvId": "364F2161C10844BF8D8579D2BBB84C9D206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/364F2161C10844BF8D8579D2BBB84C9D206"
         },
         {
-            "Description": "Bringing people together to solve differences.",
-            "SkillId": "2.B.1.d",
-            "Title": "Negotiation"
-        },
-        {
-            "Description": "Thinking about the pros and cons of different options and picking the best one.",
-            "SkillId": "2.B.4.e",
-            "Title": "Judgment and Decision Making"
-        },
-        {
-            "Description": "Thinking about the pros and cons of different ways to solve a problem.",
-            "SkillId": "2.A.2.a",
-            "Title": "Critical Thinking"
-        },
-        {
-            "Description": "Using math to solve problems.",
-            "SkillId": "2.A.1.e",
-            "Title": "Mathematics"
-        },
-        {
-            "Description": "Listening to others, not interrupting, and asking good questions.",
-            "SkillId": "2.A.1.b",
-            "Title": "Active Listening"
-        },
-        {
-            "Description": "Talking people into changing their minds or their behavior.",
-            "SkillId": "2.B.1.c",
-            "Title": "Persuasion"
-        },
-        {
-            "Description": "Knowledge of the structure and content of the English language including the meaning and spelling of words, rules of composition, and grammar.",
-            "SkillId": "2.C.7.a",
-            "Title": "English Language"
-        },
-        {
-            "Description": "Figuring out how a system should work and how changes in the future will affect it.",
-            "SkillId": "2.B.4.g",
-            "Title": "Systems Analysis"
-        },
-        {
-            "Description": "Figuring out how to use new ideas or things.",
-            "SkillId": "2.A.2.b",
-            "Title": "Active Learning"
-        },
-        {
-            "Description": "Talking to others.",
-            "SkillId": "2.A.1.d",
-            "Title": "Speaking"
-        },
-        {
-            "Description": "Writing things for co-workers or customers.",
-            "SkillId": "2.A.1.c",
-            "Title": "Writing"
-        },
-        {
-            "Description": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
-            "SkillId": "2.C.3.a",
-            "Title": "Computers and Electronics"
-        },
-        {
-            "Description": "Changing what is done based on other people's actions.",
-            "SkillId": "2.B.1.b",
-            "Title": "Coordination"
-        },
-        {
-            "Description": "Measuring how well a system is working and how to improve it.",
-            "SkillId": "2.B.4.h",
-            "Title": "Systems Evaluation"
-        },
-        {
-            "Description": "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
-            "SkillId": "2.C.1.e",
-            "Title": "Customer and Personal Service"
-        },
-        {
-            "Description": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
-            "SkillId": "2.C.4.a",
-            "Title": "Mathematics"
-        },
-        {
-            "Description": "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
-            "SkillId": "2.C.1.a",
-            "Title": "Administration and Management"
-        },
-        {
-            "Description": "Knowledge of administrative and clerical procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and other office procedures and terminology.",
-            "SkillId": "2.C.1.b",
-            "Title": "Clerical"
+            "AccquisitionDate": "2020-9-27 4:29 AM",
+            "Company": "Ascension Health",
+            "Fc": "True",
+            "JobTitle": "Advanced Emergency Medical Technician - AEMT",
+            "JvId": "66E042FDF1F347A88AECFC02C8F4E264206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/66E042FDF1F347A88AECFC02C8F4E264206"
         }
     ],
-    "TargetCertificates": 3,
-    "TargetEducationTitle": "High school diploma or equivalent",
-    "TargetExperienceTitle": "None",
-    "TargetLicenses": 0,
-    "TargetOccupationCode": "41309901",
-    "TargetOccupationTitle": "Energy Brokers",
-    "TargetOccupationWage": "$61,400",
-    "TargetTrainingTitle": "Moderate-term on-the-job training"
+    "JobsKeywordLocations": {
+        "EndRow": "500",
+        "IsCode": false,
+        "IsValidLocation": true,
+        "Keyword": "developer",
+        "Location": "Nashville,TN",
+        "LocationState": null,
+        "Message": null,
+        "Radius": "25",
+        "StartRow": "0",
+        "Title": null
+    },
+    "Locations": null
 }
