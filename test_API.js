@@ -79,7 +79,7 @@ function fast_growing_job_report(jobName ,location ) {
     if (this.readyState == 4 ) {
       jobs_json = JSON.parse(this.responseText);
       var table_insert = document.getElementById('table_insert');
-      table_insert.appendChild(document.createTextNode(jobs_json))
+      table_insert.appendChild(document.createTextNode(this.responseText))
         }
      };
 
