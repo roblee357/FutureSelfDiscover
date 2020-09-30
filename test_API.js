@@ -90,4 +90,64 @@ function fast_growing_job_report(jobName ,location ) {
      xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
      xhttp.send();     
      //return jobs_json;
+     var myList = [
+  { "name": "abc", "age": 50 },
+  { "age": "25", "hobby": "swimming" },
+  { "name": "xyz", "hobby": "programming" }
+];
+
+// Builds the HTML Table out of myList.
+function buildHtmlTable(selector) {
+  var columns = addAllColumnHeaders(myList, selector);
+
+  for (var i = 0; i < myList.length; i++) {
+    var row$ = $('<tr/>');
+    for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+      var cellValue = myList[i][columns[colIndex]];
+      if (cellValue == null) cellValue = "";
+      row$.append($('<td/>').html(cellValue));
+    }
+    $(selector).append(row$);
+  }
+}
+
+// Adds a header row to the table and returns the set of columns.
+// Need to do union of keys from all records as some records may not contain
+// all records.
+function addAllColumnHeaders(myList, selector) {
+  var columnSet = [];
+  var headerTr$ = $('<tr/>');
+
+  for (var i = 0; i < myList.length; i++) {
+    var rowHash = myList[i];
+    for (var key in rowHash) {
+      if ($.inArray(key, columnSet) == -1) {
+        columnSet.push(key);
+        headerTr$.append($('<th/>').html(key));
+      }
+    }
+  }
+  $(selector).append(headerTr$);
+
+  return columnSet;
+}
+   }
+
+   function fast_growing_job_report_backup(jobName ,location ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 ) {
+      // jobs_json = JSON.parse(this.responseText);
+      // var table_insert = document.getElementById('table_insert');
+      // table_insert.removeChild();
+      // table_insert.appendChild(document.createTextNode(this.responseText));
+      document.getElementById('table_insert').value = this.responseText
+        }
+     };
+     report_type = document.getElementById("report_type").value;
+     report_type = encodeURIComponent(report_type.trim());
+     xhttp.open("GET", "https://api.careeronestop.org/v1/occupationsreports/bSzANWeySBZwyEB/" + report_type + "/US/0/0/0/0/10", true);
+     xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
+     xhttp.send();     
+     //return jobs_json;
    }
