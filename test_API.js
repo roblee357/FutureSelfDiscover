@@ -77,7 +77,12 @@ function fast_growing_job_report(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
-      jobs_json = JSON.parse(this.responseText);
+      // jobs_json = JSON.parse(this.responseText);
+               var jobs_json = [
+      { "name": "abc", "age": 50 },
+      { "age": "25", "hobby": "swimming" },
+      { "name": "xyz", "hobby": "programming" }
+    ];
       // var table_insert = document.getElementById('table_insert');
       // table_insert.removeChild();
       // table_insert.appendChild(document.createTextNode(this.responseText));
@@ -94,11 +99,7 @@ function fast_growing_job_report(jobName ,location ) {
 
 }
 
-//      var myList = [
-//   { "name": "abc", "age": 50 },
-//   { "age": "25", "hobby": "swimming" },
-//   { "name": "xyz", "hobby": "programming" }
-// ];
+
 // var myList  = JSON.parse(yourJsonString);
 // Builds the HTML Table out of myList.
 function buildHtmlTable(selector,myList) {
