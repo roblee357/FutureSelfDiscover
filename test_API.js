@@ -90,6 +90,9 @@ function fast_growing_job_report(jobName ,location ) {
      xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
      xhttp.send();     
      //return jobs_json;
+
+}
+
      var myList = [
   { "name": "abc", "age": 50 },
   { "age": "25", "hobby": "swimming" },
@@ -131,7 +134,7 @@ function addAllColumnHeaders(myList, selector) {
 
   return columnSet;
 }
-   }
+   
 
    function fast_growing_job_report_backup(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
