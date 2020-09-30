@@ -82,6 +82,7 @@ function fast_growing_job_report(jobName ,location ) {
       // table_insert.removeChild();
       // table_insert.appendChild(document.createTextNode(this.responseText));
       document.getElementById('table_insert').value = this.responseText
+      buildHtmlTable('#excelDataTable')
         }
      };
      report_type = document.getElementById("report_type").value;
