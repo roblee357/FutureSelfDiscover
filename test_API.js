@@ -78,6 +78,8 @@ function fetch_jobs(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
+      var raw_response = document.getElementById('raw_response');
+      raw_response.innerHTML = this.responseText;
       jobs_json = JSON.parse(this.responseText);
          //   document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs,null,'\t');
          tableCreate(jobs_json);
