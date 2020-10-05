@@ -19,11 +19,11 @@ function fetch_Occupations(jobName ,location ) {
    function tableCreateOccupations(jobs_json) {
 
     var RecordCount = document.getElementById('RecordCount');
-    RecordCount.appendChild(jobs_json.RecordCount)
+    RecordCount.innerHTML = jobs_json.RecordCount
     var DidYouMean = document.getElementById('DidYouMean');
-    DidYouMean.appendChild(jobs_json.DidYouMean)
+    DidYouMean.innerHTML = jobs_json.DidYouMean
     var AutoCorrection = document.getElementById('AutoCorrection');
-    AutoCorrection.appendChild(jobs_json.AutoCorrection)
+    AutoCorrection.innerHTML = jobs_json.AutoCorrection
 
     var table_insert = document.getElementById('table_insert');
     var tbl = document.createElement('table');
