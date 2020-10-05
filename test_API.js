@@ -24,6 +24,8 @@ function fetch_Occupations(jobName ,location ) {
     DidYouMean.innerHTML = jobs_json.DidYouMean
     var AutoCorrection = document.getElementById('AutoCorrection');
     AutoCorrection.innerHTML = jobs_json.AutoCorrection
+    var raw_response = document.getElementById('raw_response');
+    raw_response.innerHTML = jobs_json
 
     var table_insert = document.getElementById('table_insert');
     var tbl = document.createElement('table');
