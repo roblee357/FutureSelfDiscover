@@ -5,7 +5,7 @@ function fetch_Occupations(jobName ,location ) {
     if (this.readyState == 4 ) {
       jobs_json = JSON.parse(this.responseText);
          //   document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs,null,'\t');
-         tableCreateJobs(jobs_json);
+         tableCreateOccupations(jobs_json);
        }
      };
      keyword = document.getElementById("keyword").value;
