@@ -3,6 +3,8 @@ function fetch_Occupations(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
+      var raw_response = document.getElementById('raw_response');
+      raw_response.innerHTML = this.responseText;
       jobs_json = JSON.parse(this.responseText);
          //   document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs,null,'\t');
          tableCreateOccupations(jobs_json);
@@ -24,8 +26,7 @@ function fetch_Occupations(jobName ,location ) {
     DidYouMean.innerHTML = jobs_json.DidYouMean
     var AutoCorrection = document.getElementById('AutoCorrection');
     AutoCorrection.innerHTML = jobs_json.AutoCorrection
-    var raw_response = document.getElementById('raw_response');
-    raw_response.innerHTML = jobs_json
+
 
     var table_insert = document.getElementById('table_insert');
     var tbl = document.createElement('table');
