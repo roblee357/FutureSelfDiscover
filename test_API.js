@@ -13,7 +13,7 @@ function tableCreate2(data) {
             var api = this.api();
             api.$('td').click( function () {
                 api.search( this.innerHTML ).draw();
-            } );,
+            } );
         data: data.Jobs,
         columns: [{
         //   data: 'JvId',
