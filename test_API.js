@@ -2,9 +2,10 @@
 
 var url = "https://clever-beaver-3f5cd2.netlify.app/data.json";
 var table;
-$(document).ready(function() {
+//$(document).ready(function() {
+function tableCreate2(data) {
   $.ajax({
-    url: url,
+   // url: url,
     success: function(data){
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
@@ -31,7 +32,7 @@ $(document).ready(function() {
       });
     }
   })
-});
+};
 
 function fetch_Occupations(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
@@ -117,6 +118,7 @@ function fetch_jobs(jobName ,location ) {
       jobs_json = JSON.parse(this.responseText);
          //   document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs,null,'\t');
          tableCreate(jobs_json);
+         tableCreate2(jobs_json);
        }
      };
      jobName = document.getElementById("jname").value;
