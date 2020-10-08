@@ -112,6 +112,7 @@ function fetch_Occupations(jobName ,location ) {
 function fetch_jobs(jobName ,location ) {
 var table = $('#myTable').DataTable();
   table.destroy();
+  document.getElementById("table").outerHTML = "";
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
