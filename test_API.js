@@ -10,11 +10,7 @@ function tableCreate2(data) {
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
         data: data.Jobs,
-        "initComplete": function () {
-            var api = this.api();
-            api.$('td').click( function () {
-                api.search( this.innerHTML ).draw();
-            },
+      
         columns: [{
         //   data: 'JvId',
         //   title: 'Job ID'
@@ -38,6 +34,17 @@ function tableCreate2(data) {
     }
   // })
 // };
+
+$(document).ready(function() {
+    $('#table').DataTable( {
+        "initComplete": function () {
+            var api = this.api();
+            api.$('td').click( function () {
+                api.search( this.innerHTML ).draw();
+            } );
+        }
+    } );
+} );
 
 function fetch_Occupations(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
