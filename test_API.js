@@ -4,9 +4,9 @@ var url = "https://clever-beaver-3f5cd2.netlify.app/data.json";
 var table;
 //$(document).ready(function() {
 function tableCreate2(data) {
-  $.ajax({
+  // $.ajax({
    // url: url,
-    success: function(data){
+    // success: function(data){
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
         data: data.Jobs,
@@ -31,8 +31,8 @@ function tableCreate2(data) {
         }]
       });
     }
-  })
-};
+  // })
+// };
 
 function fetch_Occupations(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
