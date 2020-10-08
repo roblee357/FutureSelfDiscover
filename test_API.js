@@ -113,6 +113,7 @@ function fetch_jobs(jobName ,location ) {
 var table = $('#myTable').DataTable();
   table.destroy();
   document.getElementById("table").outerHTML = "";
+  console.log(table.innerHTML)
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
