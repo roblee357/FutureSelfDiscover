@@ -119,7 +119,7 @@ function fetch_jobs(jobName ,location ) {
       raw_response.innerHTML = this.responseText;
       jobs_json = JSON.parse(this.responseText);
          //   document.getElementById("demo").innerHTML = JSON.stringify(jobs_json.Jobs,null,'\t');
-         tableCreate(jobs_json);
+         //tableCreate(jobs_json);
          tableCreate2(jobs_json);
        }
      };
