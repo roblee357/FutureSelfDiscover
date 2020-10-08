@@ -35,16 +35,16 @@ function tableCreate2(data) {
   // })
 // };
 
-$(document).ready(function() {
-    $('#table').DataTable( {
-        "initComplete": function () {
-            var api = this.api();
-            api.$('td').click( function () {
-                api.search( this.innerHTML ).draw();
-            } );
-        }
-    } );
-} );
+// $(document).ready(function() {
+//     $('#table').DataTable( {
+//         "initComplete": function () {
+//             var api = this.api();
+//             api.$('td').click( function () {
+//                 api.search( this.innerHTML ).draw();
+//             } );
+//         }
+//     } );
+// } );
 
 function fetch_Occupations(jobName ,location ) {
   var xhttp = new XMLHttpRequest();
