@@ -1,0 +1,64 @@
+{
+    "Companies": null,
+    "Jobcount": "510",
+    "Jobs": [
+        {
+            "AccquisitionDate": "2020-9-26 5:20 AM",
+            "Company": "Kforce",
+            "Fc": "False",
+            "JobTitle": ".NET Architect - Azure PaaS",
+            "JvId": "6CE92519098E47DCAD7462F8CC373C3E206",
+            "Location": "Hermitage, Tennessee",
+            "URL": "https://de.jobsyn.org/6CE92519098E47DCAD7462F8CC373C3E206"
+        },
+        {
+            "AccquisitionDate": "2020-9-26 4:38 AM",
+            "Company": "Fiserv",
+            "Fc": "True",
+            "JobTitle": "100% Commission - Senior Adviser - Direct Sales",
+            "JvId": "CC7A11B32D144BCC806F9048FEC6CD33206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/CC7A11B32D144BCC806F9048FEC6CD33206"
+        },
+        {
+            "AccquisitionDate": "2020-9-24 10:58 PM",
+            "Company": "Mars",
+            "Fc": "False",
+            "JobTitle": "2021 Mars Inc. Internship - Supply Chain and Procurement (Nashville or St. Louis) 1",
+            "JvId": "3C4774BFB9024B9BB8D5714DF21EB3F7206",
+            "Location": "Franklin, Tennessee",
+            "URL": "https://de.jobsyn.org/3C4774BFB9024B9BB8D5714DF21EB3F7206"
+        },
+        {
+            "AccquisitionDate": "2020-9-25 11:06 AM",
+            "Company": "Vanderbilt University",
+            "Fc": "True",
+            "JobTitle": "Administrative Specialist, Sociology and Religious Studies",
+            "JvId": "364F2161C10844BF8D8579D2BBB84C9D206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/364F2161C10844BF8D8579D2BBB84C9D206"
+        },
+        {
+            "AccquisitionDate": "2020-9-27 4:29 AM",
+            "Company": "Ascension Health",
+            "Fc": "True",
+            "JobTitle": "Advanced Emergency Medical Technician - AEMT",
+            "JvId": "66E042FDF1F347A88AECFC02C8F4E264206",
+            "Location": "Nashville, Tennessee",
+            "URL": "https://de.jobsyn.org/66E042FDF1F347A88AECFC02C8F4E264206"
+        }
+    ],
+    "JobsKeywordLocations": {
+        "EndRow": "500",
+        "IsCode": false,
+        "IsValidLocation": true,
+        "Keyword": "developer",
+        "Location": "Nashville,TN",
+        "LocationState": null,
+        "Message": null,
+        "Radius": "25",
+        "StartRow": "0",
+        "Title": null
+    },
+    "Locations": null
+}
