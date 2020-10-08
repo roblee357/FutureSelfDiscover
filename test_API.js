@@ -9,8 +9,12 @@ function tableCreate2(data) {
     // success: function(data){
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
+        "initComplete": function () {
+            var api = this.api();
+            api.$('td').click( function () {
+                api.search( this.innerHTML ).draw();
+            } );,
         data: data.Jobs,
-      
         columns: [{
         //   data: 'JvId',
         //   title: 'Job ID'
