@@ -110,11 +110,8 @@ function fetch_Occupations(jobName ,location ) {
 
 
 function fetch_jobs(jobName ,location ) {
-var table = $('#myTable').DataTable();
-  table.destroy();
-  tbl = document.getElementById("table");
-  if(tbl) tbl.parentNode.removeChild(tbl);
-  console.log(table.innerHTML)
+
+  console.log("Fetching jobs. Please stand by...")
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
