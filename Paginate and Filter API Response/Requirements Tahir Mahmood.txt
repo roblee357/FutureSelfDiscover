@@ -1,0 +1,4 @@
+Product will create fitlerable, paginated table from a JSON object.
+Product will have the same style as shown in your client demo.
+A JSON object will be provided. the object.Jobs field will be tabulated.
+
