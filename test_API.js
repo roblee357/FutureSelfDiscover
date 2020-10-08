@@ -11,9 +11,9 @@ function tableCreate2(data) {
       table = $('#table').dataTable({
         data: data.Jobs,
         columns: [{
-          data: 'JvId',
-          title: 'Job ID'
-        },{
+        //   data: 'JvId',
+        //   title: 'Job ID'
+        // },{
           data: 'JobTitle',
           title: 'Job Title'
         },{
