@@ -4,6 +4,7 @@ var table;
 var previous_search = "";
 
 //$(document).ready(function() {
+$.noConflict();
 function tableCreate2(data) {
   // $.ajax({
    // url: url,
