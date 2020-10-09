@@ -2,6 +2,8 @@
 
 var url = "https://clever-beaver-3f5cd2.netlify.app/data.json";
 var table;
+var previous_search = "";
+
 //$(document).ready(function() {
 function tableCreate2(data) {
   // $.ajax({
@@ -9,11 +11,23 @@ function tableCreate2(data) {
     // success: function(data){
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
-        // "initComplete": function () {
-        //     var api = this.api();
-        //     api.$('td').click( function () {
-        //         api.search( this.innerHTML ).draw();
-        //     } );
+        "initComplete": function () {
+            var api = this.api();
+            api.$('td').click( function () {
+              console.log("Fetching jobs. Please stand by... " + previous_search);
+              if (this.innerHTML != previous_search && !this.innerHTML.includes('http')){
+                console.log("length" + api.search.length);
+                api.search( this.innerHTML ).draw()  ;
+                     previous_search = this.innerHTML;  
+                   } else {
+                    console.log("Matching potato pants!");
+                      api.search( "" ).draw()  ;
+                      previous_search = this.innerHTML;  
+                    }
+              
+              } );
+          }
+        ,
         data: data.Jobs,
         columns: [{
         //   data: 'JvId',
@@ -25,15 +39,25 @@ function tableCreate2(data) {
           data: 'Company',
           title: 'Company'
         },{
+          data: 'Location',
+          title: 'Location'
+        },{
           data: 'AccquisitionDate',
           title: 'Accquisition Date'
         },{
           data: 'URL',
-          title: 'URL'
-        },{
-          data: 'Location',
-          title: 'Location'
-        }]
+          title: 'Link'
+        }],
+
+  "columnDefs": [ {
+    "targets": 4,
+    "data": "download_link",
+    "render": function ( data, type, row, meta ) {
+      return '<a href="'+data+'" target="_blank">Apply</a>';
+    }
+  } ]
+
+
       });
     }
   // })
@@ -127,7 +151,7 @@ function fetch_Occupations(jobName ,location ) {
 
 function fetch_jobs(jobName ,location ) {
 
-  console.log("Fetching jobs. Please stand by...")
+  
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 ) {
