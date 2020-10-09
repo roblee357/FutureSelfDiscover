@@ -1,6 +1,5 @@
 
 
-var url = "https://clever-beaver-3f5cd2.netlify.app/data.json";
 var table;
 var previous_search = "";
 
@@ -169,7 +168,7 @@ function fetch_jobs(jobName ,location ) {
      jobName = encodeURIComponent(jobName.trim());
      location = encodeURIComponent(location.trim());
      distance = encodeURIComponent(distance.trim());
-     xhttp.open("GET", "https://api.careeronestop.org/v1/jobsearch/bSzANWeySBZwyEB/" + jobName + "/" + location + "/" + distance + "/jobtitle/ASC/1/1000/0", true);
+     xhttp.open("GET", "https://api.careeronestop.org/v1/jobsearch/bSzANWeySBZwyEB/" + jobName + "/" + location + "/" + distance + "/jobtitle/ASC/1/1000/60", true);
      xhttp.setRequestHeader('Authorization','Bearer hpC99KhTcsZFp6AyxI/uJFOwkjXPy6+8IVSpPV0eKL7nnP/uWioTvtdsV2Nvg+J9KeQz6rfVFAwuD7nsTX961g==');
      xhttp.send();     
      //return jobs_json;
