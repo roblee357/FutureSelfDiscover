@@ -9,11 +9,11 @@
       <p class="formdesc">Search for a job right now by entering a job and location in the boxes below or find information on your job search with the links below.</p>
       <div class="clearfix">
 
-         <div class="field-keyword"><label for="jname" style="width:224px;">Job?</label><input id="jname" maxlength="100" type="text" value="Developer" placeholder="Job title or keyword" onfocus="if(this.value=='Job title or keyword')this.value=''" onblur="if(this.value=='')this.value='Job title or keyword'" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')"></div>
+         <div class="field-keyword"><label for="jname" style="width:224px;">Job?</label><input id="jname" maxlength="100" type="text"  placeholder="Job title or keyword" onfocus="if(this.value=='Job title or keyword')this.value=''" onblur="if(this.value=='')this.value='Job title or keyword'" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')"></div>
 
-         <div class="field-location"><label for="lname" style="width:164px;">Where?</label><input id="lname" type="text" value="29651" placeholder="City, State, or ZIP Code" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
+         <div class="field-location"><label for="lname" style="width:164px;">Where?</label><input id="lname" type="text"  placeholder="City, State, or ZIP Code" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
 
-         <div class="field-location"><label for="distName">Distance?</label><input id="distName" type="text" value="25" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
+         <div class="field-location"><label for="distName" style="width:164px;">Radius?   (miles)</label><input id="distName" type="text" value="25" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
 
 
          <div style="float: left;margin-left: 10px;margin-bottom: 10px;">
@@ -46,8 +46,7 @@
 <script>
   var script   = document.createElement('script');
   script.type  = 'text/javascript';
-  script.src  = "test_API.js";
-  // script.src  = "https://clever-beaver-3f5cd2.netlify.app/test_API.js";
+  script.src  = "https://clever-beaver-3f5cd2.netlify.app/test_API.js";
   script.crossorigin = "anonymous";
   document.body.appendChild(script);
 </script>
@@ -62,6 +61,25 @@
 
 <!-- <p id="raw_response">&nbsp;</p> -->
 
-  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.js"></script>
-  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js"></script>
+
+<script>
+  var script   = document.createElement('script');
+  script.type  = 'text/javascript';
+  script.src  = "https://clever-beaver-3f5cd2.netlify.app/js/jquery.js";
+  script.crossorigin = "anonymous";
+  document.body.appendChild(script);
+</script>
+
+<script>
+  var script   = document.createElement('script');
+  script.type  = 'text/javascript';
+  script.src  = "https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js";
+  script.crossorigin = "anonymous";
+  document.body.appendChild(script);
+</script>
+
+
+ <!-- <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.js"></script>  -->
+ <!--  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js"></script>  -->
+
   <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/dataTables.bootstrap4.js"></script>
