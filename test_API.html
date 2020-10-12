@@ -1,48 +1,48 @@
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
- <link rel="stylesheet" type="text/css" href="https://clever-beaver-3f5cd2.netlify.app/css/c1s_s1.css">
+<head><style>
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding : 20px;
+    margin-left: 5px;
+    display: inline;
+    border: solid white 1px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: 0px;
+}
+</style></head>
 
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<!-- <link href="css/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" /> -->
+ <link href="https://clever-beaver-3f5cd2.netlify.app/css/c1s_s1.css" rel="stylesheet" type="text/css" /> 
 <div class="clearfix page-text">
-   <div class="grey-box search-box" style="background: none repeat scroll 0 0 #bfd0df;">
-      <div class="blue-title">Find a Job</div>
-      <p class="formdesc">Search for a job right now by entering a job and location in the boxes below or find information on your job search with the links below.</p>
-      <div class="clearfix">
+<div class="grey-box search-box" style="background: none repeat scroll 0 0 #bfd0df;">
+<div class="blue-title">Find a Job</div>
 
-         <div class="field-keyword"><label for="jname" style="width:224px;">Job?</label><input id="jname" maxlength="100" type="text"  placeholder="Job title or keyword" onfocus="if(this.value=='Job title or keyword')this.value=''" onblur="if(this.value=='')this.value='Job title or keyword'" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')"></div>
+<p class="formdesc">Search for a job right now by entering a job and location in the boxes below or find information on your job search with the links below.</p>
 
-         <div class="field-location"><label for="lname" style="width:164px;">Where?</label><input id="lname" type="text"  placeholder="City, State, or ZIP Code" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
+<div class="clearfix">
+<div class="field-keyword"><label for="jname" style="width:224px;">Job?</label><input id="jname" maxlength="100" onblur="if(this.value=='')this.value='Job title or keyword'" onfocus="if(this.value=='Job title or keyword')this.value=''" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')"  placeholder="Job title or keyword" type="text" /></div>
 
-         <div class="field-location"><label for="distName" style="width:164px;">Radius?   (miles)</label><input id="distName" type="text" value="25" maxlength="100" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" autocomplete="off"></div>
+<div class="field-location"><label for="lname" style="width:164px;">Where?</label><input autocomplete="off" id="lname" maxlength="100" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)"  placeholder="City, State, or ZIP Code" type="text" /></div>
 
+<div class="field-location"><label for="distName" style="width:164px;">Radius? (miles)</label><input autocomplete="off" id="distName" maxlength="100" onblur="if(this.value=='')this.value='City, State, or ZIP Code'" onfocus="if(this.value=='City, State, or ZIP Code')this.value=''" onkeydown="DisplaydllByZip(&quot;txtLocation&quot;);" onkeypress="javascript:DefaultEnterButton(event,'btnFindJob')" onkeyup="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" onmouseout="javascript:StripSpecialCharacters(txtLocation,txtLocation.value)" type="text" value="25" /></div>
 
-         <div style="float: left;margin-left: 10px;margin-bottom: 10px;">
-            <div id="divRadius" style="display:none">
-               <div class="module-heading"><label for="ddlProximityFirst" id="lblDdlRadius" alt="Radius Around Location" name="RadiusAroundLocationName">Within</label></div>
-               <select id="ddlProximityFirst" name="ddlProximityFirsts" style="padding:7px">
-                  <option value="5">5 miles</option>
-                  <option value="25" selected="">25 miles</option>
-                  <option value="50">50 miles</option>
-                  <option value="100">100 miles</option>
-               </select>
-            </div>
-         </div>
-         <button class="blue-button magnify-icon" type="button" id="btnFindJob" value="Search for Jobs" alt="Search" title="Search" name="Search" onclick="fetch_jobs()" style="cursor:pointer;margin-left:15px;margin-top:20px; float:right;"><span href="#">
-         Search
-         </span></button>
-      </div>
-      <div lang="es" id="divSpanishText" class="notranslate" style="display: none;">Se puede mostrar CareerOneStop en español, pero para buscar, hay que utilizar inglés.</div>
-      <div class="grid-group">
-         <div class="error-messages-stand-alone" id="occupation-errors"></div>
-         <div class="error-messages-stand-alone" id="location-errors"></div>
-      </div>
-   </div>
+<div style="float: left;margin-left: 10px;margin-bottom: 10px;">
+<div id="divRadius" style="display:none">
+<div class="module-heading"><label alt="Radius Around Location" for="ddlProximityFirst" id="lblDdlRadius" name="RadiusAroundLocationName">Within</label></div>
+<select id="ddlProximityFirst" name="ddlProximityFirsts" style="padding:7px"><option value="5">5 miles</option><option selected="selected" value="25">25 miles</option><option value="50">50 miles</option><option value="100">100 miles</option> </select></div>
 </div>
+<button alt="Search" class="blue-button magnify-icon" id="btnFindJob" name="Search" onclick="fetch_jobs()" style="cursor:pointer;margin-left:15px;margin-top:20px; float:right;" title="Search" type="button" value="Search for Jobs"><span href="#">Search </span></button></div>
 
+<div class="notranslate" id="divSpanishText" lang="es" style="display: none;">Se puede mostrar CareerOneStop en espa&ntilde;ol, pero para buscar, hay que utilizar ingl&eacute;s.</div>
 
+<div class="grid-group">
+<div class="error-messages-stand-alone" id="occupation-errors">&nbsp;</div>
 
-
-
+<div class="error-messages-stand-alone" id="location-errors">&nbsp;</div>
+</div>
+</div>
+</div>
 <script>
   var script   = document.createElement('script');
   script.type  = 'text/javascript';
@@ -51,35 +51,18 @@
   document.body.appendChild(script);
 </script>
 
-
-      <table id="table" class="table table-striped table-bordered" style="width:100%">
-      </table>
-
-
-
-<!-- <p id="table_insert">&nbsp;</p> -->
-
-<!-- <p id="raw_response">&nbsp;</p> -->
-
-
-<script>
+<table class="table table-striped table-bordered" id="table" style="width:100%">
+</table>
+<!-- <p id="table_insert">&nbsp;</p> --><!-- <p id="raw_response">&nbsp;</p> --><script>
   var script   = document.createElement('script');
   script.type  = 'text/javascript';
   script.src  = "https://clever-beaver-3f5cd2.netlify.app/js/jquery.js";
   script.crossorigin = "anonymous";
   document.body.appendChild(script);
-</script>
-
-<script>
+</script><script>
   var script   = document.createElement('script');
   script.type  = 'text/javascript';
   script.src  = "https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js";
   script.crossorigin = "anonymous";
   document.body.appendChild(script);
-</script>
-
-
- <!-- <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.js"></script>  -->
- <!--  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js"></script>  -->
-
-  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/dataTables.bootstrap4.js"></script>
+</script><!-- <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.js"></script>  --><!--  <script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/jquery.dataTables.js"></script>  --><script type="text/javascript" language="javascript" src="https://clever-beaver-3f5cd2.netlify.app/js/dataTables.bootstrap4.js"></script>

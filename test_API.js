@@ -33,7 +33,7 @@ function tableCreate2(data) {
         ,
         "pageLength": 25,
         "oLanguage": {
-           "sSearch": "Filter Results: "
+           "sSearch": "Select cells below or type in this field to filter results: "
          },
         data: data.Jobs,
         columns: [{
