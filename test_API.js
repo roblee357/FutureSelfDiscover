@@ -30,7 +30,7 @@ function tableCreate2(data) {
         "pageLength": 25,
         "oLanguage": {
            "sSearch": "Filter Results"
-         }
+         },
         data: data.Jobs,
         columns: [{
           data: 'JvId',
