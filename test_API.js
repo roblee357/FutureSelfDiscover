@@ -29,13 +29,10 @@ function tableCreate2(data) {
         ,
         "pageLength": 25,
         "oLanguage": {
-           "sSearch": "Filter Results"
+           "sSearch": "Filter Results: "
          },
         data: data.Jobs,
         columns: [{
-          data: 'JvId',
-          title: 'Job ID'
-        },{
           data: 'JobTitle',
           title: 'Job Title'
         },{
@@ -45,11 +42,12 @@ function tableCreate2(data) {
           data: 'AccquisitionDate',
           title: 'Date Posted'
         },{
-          data: 'URL',
-          title: 'URL'
-        },{
           data: 'Location',
           title: 'Location'
+        },{
+          data: 'URL',
+          title: 'Link'
+
         }],
 
   "columnDefs": [ {
