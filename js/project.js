@@ -6,6 +6,10 @@ $(document).ready(function() {
 		success: function(data){
 			console.log(data.Jobs[0])
 			table = $('#table').dataTable({
+				"pageLength": 25,
+				"oLanguage": {
+				   "sSearch": "Filter Results"
+				 }
 				data: data.Jobs,
 				columns: [{
 					data: 'JvId',
@@ -18,7 +22,7 @@ $(document).ready(function() {
 					title: 'Company'
 				},{
 					data: 'AccquisitionDate',
-					title: 'Accquisition Date'
+					title: 'Date Posted'
 				},{
 					data: 'URL',
 					title: 'URL'
