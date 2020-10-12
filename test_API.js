@@ -27,25 +27,29 @@ function tableCreate2(data) {
               } );
           }
         ,
+        "pageLength": 25,
+        "oLanguage": {
+           "sSearch": "Filter Results"
+         }
         data: data.Jobs,
         columns: [{
-        //   data: 'JvId',
-        //   title: 'Job ID'
-        // },{
+          data: 'JvId',
+          title: 'Job ID'
+        },{
           data: 'JobTitle',
           title: 'Job Title'
         },{
           data: 'Company',
           title: 'Company'
         },{
-          data: 'Location',
-          title: 'Location'
-        },{
           data: 'AccquisitionDate',
-          title: 'Accquisition Date'
+          title: 'Date Posted'
         },{
           data: 'URL',
-          title: 'Link'
+          title: 'URL'
+        },{
+          data: 'Location',
+          title: 'Location'
         }],
 
   "columnDefs": [ {
