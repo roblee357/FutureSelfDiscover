@@ -8,6 +8,10 @@ function tableCreate2(data) {
   // $.ajax({
    // url: url,
     // success: function(data){
+      for (var i = 0; i < data.Jobs.length; i++) {
+          data.Jobs[i].AccquisitionDate = data.Jobs[i].AccquisitionDate.split(" ")[0];
+        }
+      
       console.log(data.Jobs[0])
       table = $('#table').dataTable({
         "initComplete": function () {
