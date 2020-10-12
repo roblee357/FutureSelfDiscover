@@ -1,1 +1,0 @@
-CKEDITOR.plugins.add("kitonchange",{init:function(n){var a=n.config;a.onChange&&n.on("change",a.onChange)}});
