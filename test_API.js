@@ -13,13 +13,13 @@ function tableCreate2(data) {
         }
         try {
       //$('#table').DataTable().clear().destroy();
-      if(('#table')!=null){
-('#table').clear();
-('#table').destroy();
+      if($('#table')!=null){
+$('#table').clear();
+$('#table').destroy();
 }
     }
     catch(err) {
-  console.log('could not delete #table')
+  console.log('could not delete #table:  ' + $('#table'))
 }
       
       table = $('#table').dataTable({
