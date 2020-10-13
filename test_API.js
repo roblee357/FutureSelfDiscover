@@ -11,16 +11,12 @@ function tableCreate2(data) {
       for (var i = 0; i < data.Jobs.length; i++) {
           data.Jobs[i].AccquisitionDate = data.Jobs[i].AccquisitionDate.split(" ")[0];
         }
-        try {
-      //$('#table').DataTable().clear().destroy();
-      if($('#table')!=null){
-$('#table').clear();
-$('#table').destroy();
+        
+if ( $.fn.DataTable.isDataTable('#table') ) {
+  $('#table').DataTable().destroy();
 }
-    }
-    catch(err) {
-  console.log('could not delete #table:  ' + $('#table') + "   "  + err)
-}
+
+$('#table tbody').empty();
       
       table = $('#table').dataTable({
         "initComplete": function () {
