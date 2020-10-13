@@ -11,7 +11,7 @@ function tableCreate2(data) {
       for (var i = 0; i < data.Jobs.length; i++) {
           data.Jobs[i].AccquisitionDate = data.Jobs[i].AccquisitionDate.split(" ")[0];
         }
-        
+
 if ( $.fn.DataTable.isDataTable('#table') ) {
   $('#table').DataTable().destroy();
 }
@@ -38,7 +38,9 @@ $('#table tbody').empty();
         ,
         "pageLength": 25,
         "oLanguage": {
-           "sSearch": "Select cells below or type in this field to filter results: "
+           "sSearch": "Select cells below or type in this field to filter results: ",
+           "sInfo": "Showing _START_ to _END_ of _TOTAL_ jobs",
+           "sLengthMenu": "Show _MENU_"
          },
         data: data.Jobs,
         columns: [{
