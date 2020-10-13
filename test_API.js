@@ -13,9 +13,9 @@ function tableCreate2(data) {
         }
         try {
       //$('#table').DataTable().clear().destroy();
-      if($('#table')!=null){
-$('#table').clear();
-$('#table').destroy();
+      if(('#table')!=null){
+('#table').clear();
+('#table').destroy();
 }
     }
     catch(err) {
