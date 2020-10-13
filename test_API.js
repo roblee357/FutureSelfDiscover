@@ -11,8 +11,13 @@ function tableCreate2(data) {
       for (var i = 0; i < data.Jobs.length; i++) {
           data.Jobs[i].AccquisitionDate = data.Jobs[i].AccquisitionDate.split(" ")[0];
         }
+        try {
       $('#table').DataTable().clear().destroy();
-      console.log(data.Jobs[0])
+    }
+    catch(err) {
+  console.log('could not delete #table')
+}
+      
       table = $('#table').dataTable({
         "initComplete": function () {
             var api = this.api();
