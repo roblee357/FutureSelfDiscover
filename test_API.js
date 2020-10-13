@@ -12,7 +12,11 @@ function tableCreate2(data) {
           data.Jobs[i].AccquisitionDate = data.Jobs[i].AccquisitionDate.split(" ")[0];
         }
         try {
-      $('#table').DataTable().clear().destroy();
+      //$('#table').DataTable().clear().destroy();
+      if($('#table')!=null){
+$('#table').clear();
+$('#table').destroy();
+}
     }
     catch(err) {
   console.log('could not delete #table')
