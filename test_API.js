@@ -19,7 +19,7 @@ $('#table').destroy();
 }
     }
     catch(err) {
-  console.log('could not delete #table:  ' + $('#table'))
+  console.log('could not delete #table:  ' + $('#table') + "   "  + err)
 }
       
       table = $('#table').dataTable({
