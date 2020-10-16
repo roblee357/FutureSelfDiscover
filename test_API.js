@@ -6,7 +6,7 @@ var previous_search = "";
 $(document).ready(function() {
 
   var x = document.getElementsByClassName("ckeditor-content--reset container--centered soft-double--ends soft--sides");
-  x[0].style.margin = 0;
+  x[1].style.margin = 0;
   x[0].style.padding = 0;
 
 })
