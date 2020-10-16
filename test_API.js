@@ -79,7 +79,8 @@ $('#table tbody').empty();
 
       });
 
-  x.style.height = 0;
+  var x = document.getElementById("wrapper");
+  x.style.height = table.offsetHeight;
 
     }
   // })
