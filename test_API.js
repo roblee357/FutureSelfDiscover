@@ -3,7 +3,14 @@
 var table;
 var previous_search = "";
 
-//$(document).ready(function() {
+$(document).ready(function() {
+
+  var x = document.getElementsByClassName("ckeditor");
+  x.style.color = "red";
+
+}
+
+
 function tableCreate2(data) {
   // $.ajax({
    // url: url,
