@@ -3,12 +3,12 @@
 var table;
 var previous_search = "";
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  var x = document.getElementById("wrapper");
-  x.style.height = 0;
+//   var x = document.getElementById("wrapper");
+//   x.style.height = 0;
 
-})
+// })
 
 
 function tableCreate2(data) {
@@ -78,6 +78,13 @@ $('#table tbody').empty();
 
 
       });
+
+console.log("window.innerHeight  " + window.innerHeight );
+console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
+console.log("document.body.clientHeight  " + document.body.clientHeight );
+  var x = document.getElementById("wrapper");
+  x.style.height = 0;
+
     }
   // })
 // };
