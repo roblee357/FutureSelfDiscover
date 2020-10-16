@@ -79,11 +79,11 @@ $('#table tbody').empty();
 
       });
 
-console.log("window.innerHeight  " + window.innerHeight );
-console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
-console.log("document.body.clientHeight  " + document.body.clientHeight );
+// console.log("window.innerHeight  " + window.innerHeight );
+// console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
+// console.log("document.body.clientHeight  " + document.body.clientHeight );
   var x = document.getElementById("wrapper");
-  x.style.height = 0;
+  x.style.height = window.innerHeight;
 
     }
   // })
