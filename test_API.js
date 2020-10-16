@@ -5,7 +5,7 @@ var previous_search = "";
 
 $(document).ready(function() {
 
-  var x = document.getElementsByClassName("ckeditor");
+  var x = document.getElementsByClassName("ckeditor-content--reset container--centered soft-double--ends soft--sides");
   x[0].style.color = "red";
 
 })
