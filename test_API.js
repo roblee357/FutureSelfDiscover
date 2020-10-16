@@ -80,7 +80,7 @@ $('#table tbody').empty();
       });
 
   var x = document.getElementById("wrapper");
-  x.style.height = table.offsetHeight;
+  x.style.height = 0;
 
     }
   // })
