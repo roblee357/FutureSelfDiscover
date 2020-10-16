@@ -79,12 +79,7 @@ $('#table tbody').empty();
 
       });
 
-// console.log("window.innerHeight  " + window.innerHeight );
- console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
- console.log("table.offsetHeight  " + table.getBoundingClientRect() );
-
-  var x = document.getElementById("wrapper");
-  x.style.height = table.getBoundingClientRect();
+  x.style.height = 0;
 
     }
   // })
