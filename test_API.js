@@ -5,7 +5,7 @@ var previous_search = "";
 
 $(document).ready(function() {
 
-  var x = document.getElementsById("wrapper");
+  var x = document.getElementById("wrapper");
   x[0].style.height = 0;
 
 })
