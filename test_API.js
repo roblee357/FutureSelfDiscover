@@ -6,7 +6,7 @@ var previous_search = "";
 $(document).ready(function() {
 
   var x = document.getElementsByClassName("ckeditor");
-  x.style.color = "red";
+  x[0].style.color = "red";
 
 })
 
