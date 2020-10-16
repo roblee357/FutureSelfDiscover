@@ -80,10 +80,11 @@ $('#table tbody').empty();
       });
 
 // console.log("window.innerHeight  " + window.innerHeight );
-// console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
-// console.log("document.body.clientHeight  " + document.body.clientHeight );
+ console.log("document.documentElement.clientHeight  " + document.documentElement.clientHeight );
+ console.log("table.offsetHeight  " + table.offsetHeight );
+
   var x = document.getElementById("wrapper");
-  x.style.height = window.innerHeight;
+  x.style.height = table.offsetHeight;
 
     }
   // })
